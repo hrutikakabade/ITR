@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Menu</title>
+<nav class="navbar">
+  <div class="logo">Delish Dine</div>
+   <ul class="nav-links">
+    <li><a href="homee.html">Home</a></li>
+     <li><a href="menu.html">Menu</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<style>
+     
+    /* Reset default list styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  color: gold;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s;
+}
+
+/* Hover underline effect */
+.nav-links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: gold;
+  transition: width 0.3s;
+  margin-top: 4px;
+}
+
+.nav-links a:hover {
+  color: gold;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #fff5f5;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+    }
+    .menu-container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        color: #d32f2f;
+        margin-bottom: 40px;
+        font-size: 36px;
+    }
+    .menu-section {
+        background: #fff;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .menu-section h2 {
+        color: #d32f2f;
+        border-left: 5px solid #d32f2f;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+    .menu-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 0;
+        border-bottom: 1px dashed #ddd;
+    }
+    .menu-item:last-child {
+        border-bottom: none;
+    }
+    .item-name {
+        font-weight: 500;
+    }
+    .item-price {
+        font-weight: 500;
+        color: #d32f2f;
+    }
+    @media (max-width: 600px) {
+        .menu-item {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .item-price {
+            margin-top: 5px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="menu-container">
+    <h1>Bringing You the Best of Indian Spices & Flavors</h1>
+
+    <!-- Starters -->
+    <div class="menu-section">
+        <h2>Starters</h2>
+        <div class="menu-item"><span class="item-name">Paneer Tikka</span><span class="item-price">₹250</span></div>
+        <div class="menu-item"><span class="item-name">Chicken Malai Tikka</span><span class="item-price">₹320</span></div>
+        <div class="menu-item"><span class="item-name">Veg Pakora</span><span class="item-price">₹180</span></div>
+        <div class="menu-item"><span class="item-name">Hara Bhara Kebab</span><span class="item-price">₹200</span></div>
+        <div class="menu-item"><span class="item-name">Tandoori Mushroom</span><span class="item-price">₹220</span></div>
+    </div>
+
+    <!-- Mains -->
+    <div class="menu-section">
+        <h2>Mains</h2>
+        <div class="menu-item"><span class="item-name">Butter Chicken</span><span class="item-price">₹420</span></div>
+        <div class="menu-item"><span class="item-name">Paneer Butter Masala</span><span class="item-price">₹350</span></div>
+        <div class="menu-item"><span class="item-name">Dal Makhani</span><span class="item-price">₹280</span></div>
+        <div class="menu-item"><span class="item-name">Chicken Biryani</span><span class="item-price">₹400</span></div>
+        <div class="menu-item"><span class="item-name">Mutton Rogan Josh</span><span class="item-price">₹480</span></div>
+    </div>
+
+    <!-- Desserts -->
+    <div class="menu-section">
+        <h2>Desserts</h2>
+        <div class="menu-item"><span class="item-name">Gulab Jamun (2 pcs)</span><span class="item-price">₹100</span></div>
+        <div class="menu-item"><span class="item-name">Rasmalai</span><span class="item-price">₹120</span></div>
+        <div class="menu-item"><span class="item-name">Kesar Kulfi</span><span class="item-price">₹90</span></div>
+        <div class="menu-item"><span class="item-name">Gajar Halwa</span><span class="item-price">₹110</span></div>
+        <div class="menu-item"><span class="item-name">Phirni</span><span class="item-price">₹100</span></div>
+    </div>
+
+    <!-- Drinks -->
+    <div class="menu-section">
+        <h2>Drinks</h2>
+        <div class="menu-item"><span class="item-name">Masala Chai</span><span class="item-price">₹50</span></div>
+        <div class="menu-item"><span class="item-name">Cold Coffee</span><span class="item-price">₹90</span></div>
+        <div class="menu-item"><span class="item-name">Fresh Lime Soda</span><span class="item-price">₹70</span></div>
+        <div class="menu-item"><span class="item-name">Soft Drinks</span><span class="item-price">₹60</span></div>
+        <div class="menu-item"><span class="item-name">Lassi (Sweet/Salted)</span><span class="item-price">₹80</span></div>
+    </div>
+
+    <!-- Specials -->
+    <div class="menu-section">
+        <h2>Chef's Specials</h2>
+        <div class="menu-item"><span class="item-name">Tandoori Platter (Veg/Non-Veg)</span><span class="item-price">₹550</span></div>
+        <div class="menu-item"><span class="item-name">Special Biryani</span><span class="item-price">₹480</span></div>
+        <div class="menu-item"><span class="item-name">Lamb Galouti Kebab</span><span class="item-price">₹520</span></div>
+        <div class="menu-item"><span class="item-name">Stuffed Kulcha with Chole</span><span class="item-price">₹240</span></div>
+        <div class="menu-item"><span class="item-name">Prawn Curry (Coastal Style)</span><span class="item-price">₹560</span></div>
+    </div>
+
+</div>
+
+</body>
+</html>

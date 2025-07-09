@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>team</title>
+         <nav class="navbar">
+  <div class="logo">Delish Dine</div>
+   <ul class="nav-links">
+    <li><a href="homee.html">Home</a></li>
+     <li><a href="menu.html">Menu</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+          <style>
+ /* body {
+    border: 2px solid #000; 
+    margin: 10px;           
+  }*/
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  color: gold;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s;
+}
+
+/* Hover underline effect */
+.nav-links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: gold;
+  transition: width 0.3s;
+  margin-top: 4px;
+}
+
+.nav-links a:hover {
+  color: gold;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+   body{
+    background-color: cornsilk;
+   }
+
+</style>
+      
+    </head>
+    <body>
+        <center>
+        <section class="chef-info">
+        <h2>Meet Our Chef John</h2>
+        <img src="chef3.jpeg" height="40%" width="40%"><br><br>
+       <p><i>With over 20 years of culinary experience, Chef John brings passion and creativity to every dish.<br>
+        Specializing in Italian and Mediterranean cuisine, he ensures an unforgettable dining experience for all our guests.</i></p>
+        </section>
+         </center>
+         <h2><center>Here is other our chefs</center></h2>
+         <marquee direction="right" scrollamount="15">
+         <img src="chef1.jpeg" height="50%" width="50%">
+         <img src="chef2.avif" height="50%" width="50%">
+         <img src="chef4.jpeg" height="50%" width="50%">
+         </marquee>
+        
+    </body>
+</html>
