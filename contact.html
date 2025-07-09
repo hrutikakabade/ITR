@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <title>Contact page</title>
+          <nav class="navbar">
+  <div class="logo">Delish Dine</div>
+   <ul class="nav-links">
+    <li><a href="homee.html">Home</a></li>
+     <li><a href="menu.html">Menu</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+        <style>
+  form {
+    border: 2px solid #000; /* Black solid border */
+    padding: 20px;          /* Space inside the border */
+    width: 300px;           /* Optional fixed width */
+    margin: 20px auto;      /* Center horizontally */
+    border-radius: 8px;     /* Optional rounded corners */
+    background-color: #f9f9f9; /* Optional background */
+  }
+  
+   .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  color: gold;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s;
+}
+
+/* Hover underline effect */
+.nav-links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: gold;
+  transition: width 0.3s;
+  margin-top: 4px;
+}
+
+.nav-links a:hover {
+  color: gold;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+   body{
+    background-color: cornsilk;
+   }
+
+</style>
+
+    </head>
+    <body>
+        <center>
+            <h1>We’d Love to Hear From You</h1>
+       <section class="contact-us">
+  
+  <form>
+    <input type="text" placeholder="Your Name" required><br><br>
+    <input type="email" placeholder="Your Email" required><br></br>
+    <textarea placeholder="Ask any queries here" required></textarea><br><br>
+    <button type="submit">Send Message</button><br>
+  
+
+
+   <h1 style="color:coral"><center>Contact us with the following</center></h1>
+  <div class="contact-info">
+    <p>📧 Email: delishdine@gmail.com</p>
+    <p>📞 Phone: +1 (234) 567-890</p>
+    <p>📍 Address: Rajarampuri kolhapur,maharashtra</p>
+  </div>
+  </form>
+</section>
+
+    </body>
+</html>

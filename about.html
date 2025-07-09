@@ -1,0 +1,129 @@
+<html>
+       <head>
+      <title>About Us Page</title>
+    <nav class="navbar">
+  <div class="logo">Delish Dine</div>
+   <ul class="nav-links">
+    <li><a href="homee.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<style>
+  /*body {
+    border: 5px solid #000; 
+    margin: 10px;           
+  }*/
+  
+    /* Reset default list styles */
+     /*header { background: url('image1.jpg') center/cover no-repeat;height: 100vh; color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+       header h1 { font-size: 4rem; margin: 0; }*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  color: gold;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s;
+}
+
+/* Hover underline effect */
+.nav-links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: gold;
+  transition: width 0.3s;
+  margin-top: 4px;
+}
+
+.nav-links a:hover {
+  color: gold;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+   body{
+    background-color: cornsilk;
+   }
+
+</style>
+       </head>
+    <body>
+    <!-- Blurred background image -->
+    <div style="
+        background-image: url('image1.jpg');
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-size: cover;
+        background-position: center;
+        z-index: 1;
+    "></div>
+
+    <!-- Foreground content -->
+    <div style="position: relative; z-index: 2; color: white; text-align: center; padding-top: 50px;">
+  
+        <p>
+            <h3 style="color: gold;"><center><i>About Our Restaurant</i></center></h3>
+            <center>
+             <h2>Our story begins with flvour.</h2>
+            <!--<img src="image1.jpg" height="50%" weight="50%">-->
+            </center>
+            <h2 style="color:salmon;"><center>Crafting memorable dining experiences since 2007.</center></h2>
+            <center>
+               <h4 style="color:beige">"Straight from the Farm to Your Plate"</h4> 
+             <b>At Delish Dine, we keep things simple: honest food, locally grown, cooked with care.<br> 
+               Our ingredients come from nearby fields, ranches, and gardens, ensuring every dish tells the story of our region.<br>
+             Join us for a meal rooted in tradition and crafted with respect for the land.</b></center>
+             <br>
+              <center><b>
+              At Olive & Thyme, we believe that great food brings people together.<br>
+              Our journey began with a simple dream—to serve wholesome, flavorful dishes made with love and the freshest ingredients."</b></center><br><br>
+             <header>
+                <center>
+             <a href="team.html" style="background:pink; color: black; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 4px;">Meet Our Team</a>
+                </center>
+            </header>
+        </p>
+      <div style="position: relative; height: 500px; overflow: hidden;">
+
+    </div>
+
+</div>
+
+    </body>
+</html>
